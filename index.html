@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bear Ninja Hunter Revisited</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main id="game-container">
+        <h2>Bear Ninja Hunter</h2>
+
+        <div class="rules-container">
+            <ul>
+                <li>Bear beats Ninja</li>
+                <li>Ninja beats Hunter</li>
+                <li>Hunter beats Bear</li>
+            </ul>
+        </div>
+
+        <hr class="button-rule">
+        
+        <div id="button-row">
+            <button id="btn-bear">Bear</button>
+            <button id="btn-ninja">Ninja</button>
+            <button id="btn-hunter">Hunter</button>
+        </div>
+
+        <hr class="button-rule">
+
+        <div id="results-area" style="display: none;">
+            
+            <div id="results-box">
+                <p id="round-result-text"></p>
+            </div>
+
+            <div id="win-counter">
+                <h3>Total Wins</h3>
+                <p>Player: <span id="player-score">0</span> | Computer: <span id="comp-score">0</span></p>
+            </div>
+
+            <button id="btn-play-again">Play Again</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
